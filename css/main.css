@@ -82,18 +82,31 @@ body {
 }
 
 	
-
+{
+    box-sizing: border-box;
+  }
+  
+  .basic {
+    max-width: 100%;
+    height: 8000px;
+    background: rgb(192, 0, 0);
+    top: 0px;
+    left: 0px;
+    
+  }
 
 /* NAVBAR */
 .navbar {
 	width: 100%; /* Full width */
-	position: fixed;
 	top:0;
 	z-index: 1000;
 	padding: 27px 27px;
 	left: 0px;
 	right: 0px;
-	background-color: rgba(255, 255, 255, 0.7);	
+	position: fixed;
+	height: 150px;
+	
+	background: linear-gradient(180deg, #FFFFFF 60%, rgba(255, 255, 255, 0) 100%);
 }
 
 
@@ -115,6 +128,13 @@ color: var(--dark);
 
 
 }
+
+.txt__button:hover, .txt__button:focus, .txt__button:active, .txt__button:visited{
+	color: #fff;
+	
+	
+	}
+
 
 .logo__pic {
 position: relative;
@@ -150,7 +170,7 @@ text-decoration: none;
 
 .top-menu__link {
 position: static;
-padding: 10px 10px;
+padding: 5px 10px;
 
 font-style: normal;
 font-weight: 400;
@@ -167,6 +187,7 @@ transition: background var(--transition);
 .top-menu__link:hover,
 .top-menu__link:focus,
 .top-menu__link:active,
+
 span.top-menu__link {
 	color: #fff;
 	background-color: rgba(0, 204, 204, 0.5);
@@ -176,6 +197,7 @@ span.top-menu__link {
 
 .menu-container {
 position: relative;
+
 }
 
 
@@ -201,29 +223,28 @@ position: relative;
 
 /* HEADER*/
 .wrapper {
-	max-width: 1180px;
+	max-width: 1084px;
 	width: 100%;
 	margin: 0 auto;
+	
 }
 
 
 header.top__header {
-	width: 100%;
-	height: 1200px;
-	background: url("../images/v4_15.png");
-	background-repeat: no-repeat;
-	background-position: top center;
-	background-size: cover;
-	opacity: 1;
 	position: relative;
-	top: 0px;
-	left: 0px;
-	overflow: hidden;
+	width: 100%;
+	height: 850px;
+	top: 70px;
+	background: url(../images/back_ground_wsw_01.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: right;
 }
 
-header.header_txt {
+
+
+header.header__txt {
 	width: 100%;
-	height: 8001px;
 	background: rgba(255,255,255,1);
 	opacity: 1;
 	position: absolute;
@@ -232,34 +253,70 @@ header.header_txt {
 	overflow: hidden;
   }
 
-  .v18_97 {
-	width: 564px;
-	color: rgba(0,51,102,1);
-	position: absolute;
-	top: 390px;
-	left: 178px;
-	font-weight: Bold;
+  .header__name {
+	position: relative;
+	padding: 150px 0px 20px 0px;
+	
+	font-style: normal;
+	font-weight: 700;
 	font-size: 72px;
-	opacity: 1;
-	text-align: left;
-  }
-  .v18_98 {
-	width: 560px;
-	color: rgb(255, 255, 255);
-	position: absolute;
-	top: 489px;
-	left: 181px;
-	font-weight: Bold;
-	font-size: 36px;
-	opacity: 1;
-	text-align: left;
+	line-height: 84px;
+	letter-spacing: 0.05em;
+	color: var(--dark);
+
   }
 
 
+  .header__slogan {
+	position: relative;
+	padding: 20px 0px 50px 0px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 165%;
+	
+	/* or 53px */
+
+	letter-spacing: 0.03em;
+	color: var(--text);
+  }
 
 
 
+  .main__button {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 15px 30px;
+	gap: 10px;
+	
+	/* accent */
+	background: #00CCCC;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+	border-radius: 50px;
+	border: 0px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+  }
 
+  /* button2 */
+	.txt__button {	
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	/* Inside auto layout */
+	
+	text-decoration: none;
+
+}
 
 
 
@@ -279,7 +336,7 @@ header.header_txt {
 .home-slider {
 	position: relative;
 	height: 100vh;
-	color: #ffffff;
+	color: #727272;
 	background-color: var(--fon);
 
 }
